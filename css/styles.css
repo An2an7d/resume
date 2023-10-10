@@ -24,28 +24,28 @@ hr{
 #container{
     position: relative;
     display: flex;
+    align-items: flex-start;
+    padding: 0px 16px;
 }
 #profile{
     flex: 15%;
     display: block;
     position: relative;
-    margin: 5% 2% 0 10%;
     width: 100%;
     height: 100%;
 }
 #info-cards{
     flex: 55%;
     display: block;
-    margin-top: 5%;
-    margin-right: 10%;
     width: 100%;
     height: 100%;
+    margin-left: 16px;
 }
 #image{
     position: relative;
     overflow: hidden;
 }
-#image,#profile-photo{
+#profile-photo{s
     position: relative;
     width: 160px;
     height: 180px;
@@ -175,6 +175,7 @@ strong,span{
     color: #0e141e;
     font-size: 16px;
     line-height: 2;
+}
 
 .card > p > i{
     font-size: 18px;
@@ -210,20 +211,15 @@ strong,span{
 .tags span span{
     color: #738f93;
 }
-@media screen and (max-width:1090px){
-    #profile{
-        margin-left: 5%;
-    }
-}
-@media screen and (max-width:850px){
+
+@media screen and (max-width:600px){
     #container{
-        display: block;
+        flex-wrap: wrap;
+    }
+    #info-cards{
+        margin-left: 0px;
     }
     #profile{
-        width: 90%;
-    }
-    .card{
-        margin: 0 5%;
-        margin-bottom: 30px;
+        text-align:center;
     }
 }
